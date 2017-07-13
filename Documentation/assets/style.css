@@ -1,0 +1,319 @@
+/*==========================================================*/
+/* Main Elements
+/*==========================================================*/
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+a {
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	color: #00A3CC;
+}
+
+a:hover {
+	color: #007A99;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.vertical {
+	display: table-cell;
+	vertical-align: middle;
+	height-max: 500px;
+}
+
+/*==========================================================*/
+/* Typography
+/*==========================================================*/
+
+body {
+	font-family: Open Sans;
+	font-size: 16px;
+	line-height: 180%;
+	color: #202020;
+}
+
+h1, h2 {
+	font-family: Open Sans;
+	font-size: 26px;
+	line-height: 160%;
+	padding-top: 50px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+b {
+	font-family: Open Sans;
+	font-weight: inherit;
+}
+
+/*==========================================================*/
+/* Header
+/*==========================================================*/
+
+#header {
+	background: #404040;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 60px;
+	color: #FFFFFF;
+	top: 0;
+	left: 0;
+	position: fixed;
+	padding: 0 10px;
+	font-family: Open Sans;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+#header p.theme-title{
+	display: inline-block;
+	text-align: center;
+	width: 6em;
+	padding: 0px;
+	margin: 14px;
+	border: 3px solid white;
+	position: relative;
+	clear: none;
+	text-transform: uppercase;
+}
+#header h1{
+	display: inline-block;
+	position: absolute;
+	top: 4px;
+	right: 10px;
+	color: white;
+	margin: 10px;
+	padding: 0;
+	font-size: 18px;
+	font-family: Open Sans;
+	font-weight: 400;
+}
+
+/*==========================================================*/
+/* Menu
+/*==========================================================*/
+
+#doc-menu {
+	background: #ecf0f1;
+	overflow: auto;
+	width: 23%;
+	max-height: 100%;
+	top: 60px;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+}
+
+#doc-menu ul {
+	margin: 60px 0;
+	color: #00A3CC;
+}
+
+#doc-menu ul li:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	left: 0;
+	top: 19px;
+	z-index: 0;
+}
+
+#doc-menu ul li.section {
+	font-family: Open Sans;
+	font-weight: 400;
+	display: block;
+	background: #ecf0f1;
+	border-top: 1px solid #e8e8e8;
+	padding: 0px;
+	
+}
+
+#doc-menu ul li.section a {
+	color: #606060;
+	padding: 10px 0 10px 20px;
+	background: none;
+}
+#doc-menu ul li.sub-section a {
+	color: #808080;
+	padding: 10px 0 10px 40px;
+}
+
+#doc-menu ul li span {
+    float: right;
+	color: #606060;
+	padding: 10px 30px 10px;
+}
+
+
+#doc-menu ul li a {
+	overflow: hidden;
+	z-index: 1;
+}
+
+#doc-menu ul li:hover,
+#doc-menu ul li.active{
+    background: #ece8e8;
+}
+#doc-menu ul a:hover{
+	background: none !important;
+}
+
+/*==========================================================*/
+/* Content
+/*==========================================================*/
+
+#doc-content {
+	position: fixed;
+	padding: 0 50px;
+	top: 60px;
+	bottom: 0;
+	left: 25%;
+	width: 75%;
+	overflow: auto;
+}
+
+#doc-content-box{
+	width: 80%;
+}
+#doc-content .quotes{
+	
+	background-color: #fcf2f2;
+    border-color: #dFb5b4;
+	margin: 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+#doc-content > * {
+	margin: 50px 0 0 0;
+}
+
+#doc-content > *:first-child {
+	margin: 0;
+}
+
+#doc-content > *:last-child {
+	margin-bottom: 50px;
+}
+
+#doc-content h1 span {
+	color: #34495e;
+	margin-right: 15px;
+	font-size: 26px;
+}
+#doc-content h1 span:after {
+	content:'.';
+}
+#doc-content h2 span {
+	color: #999999;
+	margin-right: 15px;
+}
+
+#doc-content ul {
+	margin-left: 50px;
+}
+
+#doc-content img {
+	padding: 6px;
+	border: 1px solid #e0e0e0;
+	border-radius: 4px;
+}
+#doc-content .doc-content-img{
+	text-align: center;
+}
+#doc-content table{
+	display: table;
+    font-size: 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+	border-color: grey;
+}
+
+#doc-content th{
+	padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#doc-content th, #doc-content td{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px 20px;
+}
+#intro {
+	width: 80%;
+	height: 100%;
+	text-align: center;
+	display: table;
+	background: url(orchid-logo-doc.png) center center no-repeat;
+	background-size: auto 80%;
+}
+
+#intro h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 46px;
+}
+
+#intro h1 span {
+	margin-right: 0;
+}
+
+#intro h2 {
+	margin: 0;
+	color: #999999;
+	font-size: 28px;
+	font-family: Open Sans;
+}
+
+.syntaxhighlighter {
+	margin-top: 50px !important;
+	overflow: auto;
+}
+
+.syntaxhighlighter .line .number {
+	width: auto !important;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+	
+	#header {
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	#doc-menu {
+		position: relative;
+		width: 100%;
+		max-height: none;
+		top: auto;
+	}
+
+	#doc-content {
+		position: relative;
+		width: 100%;
+		top: auto;
+		left: auto;
+	}
+
+	#intro {
+		height: 500px;
+	}
+
+}
